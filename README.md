@@ -3,7 +3,7 @@ Magic the Gathering draft simulator in PHP using JavaScript and MySQL
 
 This is the first iteration of the Magic draft simulator that I worked on. It is designed for the Battle for Zendikar set of cards but could be adapted for use with any other set.
 
-This code uses a separate function (boostgen.php) to generate boosters in the form of arrays of numbers that correspond to actual card numbers. These numbers are pulled from a MySQL database (btz.sql) which stores other card parameters that can be used by the computer to inform card picks during drafting.
+This code uses a separate function (boostgenfunc.php) to generate boosters in the form of arrays of numbers that correspond to actual card numbers. These numbers are pulled from a MySQL database (btz.sql) which stores other card parameters that can be used by the computer to inform card picks during drafting.
 
 It uses session variables to store information over the course of a draft and assigns 3 unopened generated boosters to each of the 8 players (1 human, 7 simulated). It then uses a small JavaScript interface code (start_v0.1A.php) to display the first booster to the human player and to feed his or her pick to the card picking portion of the program (draft.php) via Ajax. The PHP aspect of this piece of code also initializes session variables.
 
